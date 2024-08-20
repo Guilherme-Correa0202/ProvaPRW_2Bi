@@ -4,6 +4,7 @@
     $password = '';
     $database = 'Prova2Bi';
     $port = 3307;
+    
 
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
     if(mysqli_connect_error()){

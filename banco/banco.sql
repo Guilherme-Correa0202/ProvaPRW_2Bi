@@ -1,5 +1,6 @@
 DROP DATABASE IF EXISTS ProjetoCarrossinha;
 
+
 CREATE DATABASE IF NOT EXISTS ProjetoCarrossinha;
 
 USE ProjetoCarrossinha;
