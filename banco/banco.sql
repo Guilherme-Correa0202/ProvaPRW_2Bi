@@ -1,14 +1,17 @@
-DROP DATABASE IF EXISTS ProjetoCarrossinha;
+DROP DATABASE IF EXISTS Prova2;
 
 
-CREATE DATABASE IF NOT EXISTS ProjetoCarrossinha;
+CREATE DATABASE IF NOT EXISTS Prova2;
 
-USE ProjetoCarrossinha;
+USE Prova2;
 
-CREATE TABLE Cidade (
-    idCidade INT PRIMARY KEY AUTO_INCREMENT,
-    nomeCidade VARCHAR(100),
-    estado VARCHAR(2)
+CREATE TABLE fluxo_caixa (
+    idFluxo INT PRIMARY KEY AUTO_INCREMENT,
+    data date not null,
+    tipo varchar(10) not null, 
+    valor decimal(10,2) not null,
+    historico varchar(150) not null,
+    cheque varchar(3) not null
 );
  
 CREATE TABLE Pessoa (
@@ -22,15 +25,5 @@ CREATE TABLE Pessoa (
     FOREIGN KEY (cidade_id) REFERENCES Cidade(idCidade)
 );
 
-CREATE TABLE Animal (
-    idAnimal INT PRIMARY KEY AUTO_INCREMENT,
-    nomeAnimal VARCHAR(100),
-    especie VARCHAR(100),
-    raca VARCHAR(100),
-    dataNascimento date,
-    idade int(100),
-    castrado bool,
-    idTutor INT,
-    FOREIGN KEY (idTutor) REFERENCES Pessoa(idPessoa)
-);
+
 

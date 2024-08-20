@@ -155,7 +155,7 @@ h3 {
     margin: 20px 0;
 }
 
-#cidade, #Pessoa, #Animal {
+#Cadastro, #Listagem, #Consulta {
     margin: 20px auto;
     max-width: 800px;
     padding: 20px;
