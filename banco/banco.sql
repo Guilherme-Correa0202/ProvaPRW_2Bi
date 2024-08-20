@@ -9,7 +9,7 @@ CREATE TABLE Cidade (
     nomeCidade VARCHAR(100),
     estado VARCHAR(2)
 );
-
+ 
 CREATE TABLE Pessoa (
     idPessoa INT PRIMARY KEY AUTO_INCREMENT,
     nomePessoa VARCHAR(100),
